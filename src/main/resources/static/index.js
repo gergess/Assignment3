@@ -27,7 +27,7 @@ function displayPetTable(data) {
                 </tr>`);
         });
         $("#data_table a").click(function(){
-            localStorage["pets-data-link"] = $(this).data("link");
+            localStorage["pet-data-link"] = $(this).data("link");
         });
     }else{
         $("#data_table").hide();

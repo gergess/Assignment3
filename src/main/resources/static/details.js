@@ -1,4 +1,4 @@
-let link = localStorage["pets-data-link"];
+let link = localStorage["pet-data-link"];
 
 $(function(){
     $.getJSON(link, displayPetData);
@@ -6,23 +6,21 @@ $(function(){
 
 function displayPetData(pet) {
 
-    $("#pet_name").text(pet.name);
-    switch (pet.kind) {
-        case 1:
-            $("#pet_kind").text("Cat");
-        case 2:
-            $("#pet_kind").text("Dog");
-        case 3:
-            $("#pet_kind").text("Rabbit");
-        default:
-            $("#pet_kind").text("NULL");
+    console.log("test");
+    $("#petName").text(pet.name);
+    if(pet.kind == 1){
+        $("#petKind").text("Cat");
+    }else if(pet.kind == 2){
+        $("#petKind").text("Dog");
+    }else if(pet.kind == 3){
+        $("#petKind").text("Rabbit");
     }
 
-    $("#pet_age").text(pet.age);
+    $("#petAge").text(pet.age);
     if(pet.vaccination){
-        $("#pet_vaccination").text("Vaccinated");
+        $("#petVaccination").text("Yes");
     }else{
-        $("#pet_vaccination").text("Not Vaccinated");
+        $("#petVaccination").text("No");
     }
 
 }

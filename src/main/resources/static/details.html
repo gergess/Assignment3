@@ -2,29 +2,45 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script defer src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+    <script src="details.js"></script>
     <title>Pet Detail</title>
 </head>
 <body>
 <h1>Pet Service</h1>
 <h2>Pet Detail</h2>
-<div>
-    <p>
-        <label class="output-label">Name</label>
-        <span id="pet_name" class="output">test</span>
-    </p>
-    <p>
-        <label class="output-label">Kind</label>
-        <span id="pet_kind" class="output">test</span>
-    </p>
-    <p>
-        <label class="output-label">Age</label>
-        <span id="pet_age" class="output">0</span>
-    </p>
-    <p>
-        <label class="output-label">Vaccination</label>
-        <span id="pet_vaccination" class="output">yes</span>
-    </p>
-</div>
+<main role="main" class="container">
+    <div class="card">
+        <div class="card-header">
+            Pet Record
+        </div>
+        <div class="card-body">
+            <p>
+                <label class="output-label">Name: </label>
+                <span id="petName" class="output">test</span>
+            </p>
+            <p>
+                <label class="output-label">Kind: </label>
+                <span id="petKind" class="output">test</span>
+            </p>
+            <p>
+                <label class="output-label">Age: </label>
+                <span id="petAge" class="output">0</span>
+            </p>
+            <p>
+                <label class="output-label">Vaccinated: </label>
+                <span id="petVaccination" class="output">yes</span>
+            </p>
+        </div>
+        <div class="card-footer">
+            <div class="btn-group">
+                <a class="btn btn-primary" href="index.html">List pets</a>
+            </div>
+        </div>
+    </div>
+</main>
 </body>
 </html>
