@@ -4,7 +4,7 @@ $(function () {
 
 function displayPetTable(data) {
 
-    let pets  = data[embedded].pets;
+    let pets  = data["_embedded"].pets;
 
     if(pets.length > 0){
         $("#no_data_message").hide();
@@ -19,7 +19,7 @@ function displayPetTable(data) {
                     <td>
                         <ul class="nav justify-content-center">
                             <li class="nav-item">
-                                <a class="nav-link" href="Details.html" data-link="${link}">
+                                <a class="nav-link" href="details.html" data-link="${link}">
                                     <i class="material-icons">info</i>&nbsp;Info</a>
                             </li>
                         </ul>

@@ -2,6 +2,10 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <script defer src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src="index.js"></script>
     <title>Pet Service</title>
@@ -9,6 +13,31 @@
 <body>
 <h1>Pet Service</h1>
 <h2>Pet List</h2>
-<ol id="pet_list"></ol>
+<main role="main" class="container">
+    <p id="no_data_message" class="alert alert-info">No pets data</p>
+    <table id="data_table" class="table table-bordered table-striped mb-4">
+        <thead>
+        <tr class="table-primary">
+            <th scope="col">Count</th>
+            <th scope="col">Pet Name</th>
+            <th scope="col">Options</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr>
+            <th scope="row" class="align-middle">1</th>
+            <td class="align-middle">test</td>
+            <td>
+                <ul class="nav justify-content-center">
+                    <li class="nav-item">
+                        <a class="nav-link" href="details.html">
+                            <i class="material-icons">info</i>&nbsp;Info</a>
+                    </li>
+                </ul>
+            </td>
+        </tr>
+        </tbody>
+    </table>
+</main>
 </body>
 </html>
