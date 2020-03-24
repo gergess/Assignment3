@@ -13,16 +13,16 @@ public class Pet implements Serializable {
     private Integer id;
 
     @Column(name = "pet_name")
-    private String petName = "";
+    private String name = "";
 
     @Column(name = "pet_kind")
-    private int petKind = 0;
+    private int kind = 0;
 
     @Column(name = "pet_age")
-    private int petGender = 0;
+    private int age = 0;
 
     @Column(name = "pet_vaccination")
-    private Boolean petVaccination = false;
+    private Boolean vaccination = false;
 
     public Pet() {
     }
@@ -35,35 +35,35 @@ public class Pet implements Serializable {
         this.id = id;
     }
 
-    public String getPetName() {
-        return petName;
+    public String getName() {
+        return name;
     }
 
-    public void setPetName(String petName) {
-        this.petName = petName;
+    public void setName(String name) {
+        this.name = name;
     }
 
-    public int getPetKind() {
-        return petKind;
+    public int getKind() {
+        return kind;
     }
 
-    public void setPetKind(int petKind) {
-        this.petKind = petKind;
+    public void setKind(int kind) {
+        this.kind = kind;
     }
 
-    public int getPetGender() {
-        return petGender;
+    public int getAge() {
+        return age;
     }
 
-    public void setPetGender(int petGender) {
-        this.petGender = petGender;
+    public void setAge(int age) {
+        this.age = age;
     }
 
-    public Boolean getPetVaccination() {
-        return petVaccination;
+    public Boolean getVaccination() {
+        return vaccination;
     }
 
-    public void setPetVaccination(Boolean petVaccination) {
-        this.petVaccination = petVaccination;
+    public void setVaccination(Boolean vaccination) {
+        this.vaccination = vaccination;
     }
 }
